@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav{
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+
+}
+.nav-icon{
+    display: flex;
+    gap: 1em;
+}
+.nav-icon i:hover{
+    cursor: pointer;
+    background-color: rgb(201, 199, 199);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.cards{
+    width: 80%;
+    margin: 0 auto;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 1px;
+    
+}
+
+.card{
+     width: 25%;
+    height: 10%;
+    margin: 50px auto;
+    padding:4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 251, 251);
+    border: solid 0.1px rgb(253, 251, 251);
+    border-radius: 3px;
+    box-shadow: 5px 5px 30px 3px rgb(167, 167, 167);
+
+}
+
+.top-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.stars{
+    margin: 15px;
+    color: rgb(255, 215, 0);
+}
+
+.button{
+    width: 60px;
+    padding: 2.5px;
+    margin: 15px;
+    background-color: rgb(214, 26, 26);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.image{
+    width: 100%;
+    margin: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 18px;
+   
+}
+
+/* .card .image{
+    width: 60%;
+} */
+
+.p{
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
+.down-card{
+ margin: 10px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+.icons i {
+    padding: 0.5rem;
+    border: 1px solid #FF0063;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #FF0063;
+    color: rgb(244, 244, 244)
+}
+
+/* .icons>span span {
+    display: none;
+} */
+
+
+
+.icons>span i {
+    padding: 5px;
+    transition: all 0.5s ease-out;
+}
+
+.icons:hover {
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    
+}
+
+.icons>span:hover .fa-cart-shopping::after{
+    content: "خرید ";
+    padding: 2px;
+    padding-right: 32px;
+    margin-left: 0.7em;
+   
+}
+.icons>span:hover .fa-heart::after{
+    content: "علاقه";
+    padding: 12px;
+    padding-right: 32px;
+    margin-left: 0.7em;
+   
+}
+.down-card .icons i{
+    transition: all 1s ease-out;
+}
+
+.icons>span:hover .icons>span span {
+    display: block !important;
+}
+
+.foot{
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    justify-content: center;
+    background-color: rgb(114, 114, 114);
+    color: rgb(255, 255, 255)
+ }
+ .h2{  
+     width: 60%;
+    padding: 10px;
+    margin: 0 auto;
+    }
+
+    .media{
+    margin: 10px;  
+    padding: 30px; 
+    width: 30%;
+    }
+
+    .icon-footer{
+        display: flex;
+        justify-content: end;
+        gap: 6em;
+        margin: 10px;
+        padding: 0.2em;
+    }
+
+    .div *{
+        margin: 10px;
+
+    }
+
+    @media screen and (min-width: 500px) {
+       .top-card , .down-card{
+        font-size: small
+       }
+       .icon-footer{
+        gap: 3em;
+       }
+      }
+      
